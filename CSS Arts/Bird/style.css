@@ -1,0 +1,160 @@
+body{
+    background-color: #35344e;
+    padding: 0;
+    margin: 0;
+}
+.container{
+    height: 400px;
+    width: 400px;
+    border: 2px solid white;
+    position: absolute;
+    margin: auto;
+    top: 0;
+    bottom: 0;
+    left: 0;
+}
+.branch{
+    height: 15px;
+    width: 350px;
+    background-color: #fc7753;
+    position: absolute;
+    top: 260px;
+    bottom: 0;
+    left: 0;
+    margin: auto;
+    border-radius: 0 15px 15px 0;
+    z-index: 1;
+}
+.branch>div{
+    background-color: #fc7753;
+    height :8px;
+    width: 50px;
+    transform: rotate(-30deg);
+    position: relative;
+    bottom: 10px;
+    left: 260px;
+    border-radius: 8px;
+}
+.Bird{
+    background-color: rgb(255, 192, 110);
+    height: 160px;
+    width: 120px;
+    border-radius: 120px;
+    position: absolute;
+    top: 180px;
+    left: 100px;
+}
+.ear-r, .ear-1{
+    height: 0;
+    width: 0;
+    border-bottom: 33px solid #553800;
+    border-left: 15px solid transparent;
+    border-right: 15px solid transparent;
+    position: relative ;
+    z-index: -2;
+}
+.ear-1{
+    bottom: 10px;
+    left: 3px;
+    transform: rotate(-20deg);
+}
+.ear-r{
+    bottom: 42px;
+    left: 88px;
+    transform: rotate(20deg);
+}
+.wing-1, .wing-r{
+    height: 80px;
+    width: 20px;
+    background-color: #a6813b;
+    position: relative ;
+    z-index: 2;
+    
+}
+.wing-1{
+   right: 8px;
+   top: 4px;
+    border-radius: 20px 0;
+}
+.wing-r{
+    left: 108px;
+    bottom: 76px;
+    border-radius: 0 20px;
+}
+.eye-1, .eye-r{
+    height: 41px;
+    width: 41px;
+    background-color: #a6813b;
+    border-radius: 50%;
+    position: relative;
+    overflow: hidden;
+}
+.eye-1{
+    bottom: 190px;
+    left: 12px;
+}
+.eye-r{
+    bottom: 230px;
+    left: 67px;
+}
+.eye-1:before, .eye-r:before{
+    content: "";
+    height: 32px;
+    width: 32px;
+    background-color: white;
+    border-radius: 50%;
+    position: absolute;
+    top: 4.5px;
+    left: 4.5px;
+}
+.eyeball {
+    height: 15px;
+    width: 15px;
+    background-color: rgb(0, 0, 0);
+    border-radius: 50%;
+    position: absolute;
+    top: 13px;
+    left: 13px;
+}
+.eyelid{
+    height: 50px;
+    width: 50px;
+    background-color: #a6813b;
+    position: relative;
+    bottom: 30px;
+    right: 5px;
+    border-radius: 20px 20px 0 0;
+    animation: blink 2s infinite;
+}
+@keyframes blink{
+    30%{
+        transform: translateY(18px);
+    }
+}
+.beak{
+    height: 0;
+    width: 0;
+    border-left: 12px solid transparent;
+    border-right: 12px solid transparent;
+    border-top: 20px solid #fff700;
+    border-radius: 50%;
+    position: relative;
+    bottom: 240px;
+    left: 47.5px;
+}
+.leg-1, .leg-r{
+    height: 9px;
+    width: 20px;
+    background-color: #ff9718;
+    position: relative;
+    z-index: 2;
+    border-radius: 8px;
+}
+.leg-1{
+    bottom: 190px;
+    left: 25px;
+}
+.leg-r{
+    bottom: 200px;
+    left: 75px;
+}
